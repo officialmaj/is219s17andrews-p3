@@ -115,6 +115,9 @@ body {
     font-weight: 200;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background 500ms;
+	background-color: #f65a5b;
+	color: #ffffff;
+	transition: width 500ms, height 500ms;
 }
 
 /* This makes sure your Github Button is centered */
