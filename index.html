@@ -29,13 +29,13 @@
 	</div>
 	</div>
 	
-        <h1 id="app_title"> {{{ title }} </h1> 
+        <h1 id="app_title"> {{ title }} </h1> 
 		
       </div>
       
     </div>
 
-    <div ng-controller"HomeController" class="main">
+    <div ng-controller="HomeController" class="main">
       
       <div class="container">
 
@@ -43,17 +43,18 @@
 		
             <div class="thumbnail">
 
-					<img ng-src "{{ movie.posters[movie.posterindex] }}" ng-click = "posterClick($index)" class="poster" />
-					<div class="imageInfo"> {{ movie.posterIndex + 1}} of {{ movie.posters.length }} </div>
+					<img ng-src = "{{ movie.posters[movie.posterindex] }}" ng-click = "posterClick($index)" class="poster" />
+					<div class="imageInfo"> {{ movie.posterindex + 1}} of {{ movie.posters.length }} </div>
 					
 					<p class="title"> {{ movie.title }} ({{movie.country}})</p> 
 					
 					<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{movie.iscore }} </p>
 					<p class="runtime">Runtime:{{movie[0].runtime}}</p> 
 					<p class="released">Released: {{movie.released | date }} | Rated: {{movie.rating}} </p>
-					<p class="websites">Websites: <a> ng-href="{{movie.imdb}}" IMDB </a> | <a> ng-href = "{{movie.website}}" websites</a></p>
+					<p class="websites"> Websites: <a ng-href="{{movie.imdb}}"> IMDB </a> | <a ng-href = "{{movie.website}}"> website </a></p>
 					
 		            <div class="social">
+					
 		              <p class="likes"> <i class="fa fa-thumbs-up" aria-hidden="true"></i> {{movie.likes}} </p>
 		              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{movie.dislikes}} </p>
 		            </div>
