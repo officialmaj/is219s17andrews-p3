@@ -123,12 +123,22 @@ app.controller('HomeController', ['$scope', function($scope) {
 	{
 		if($scope.movies[index].posterIndex < ($scope.movies[index].posters.length - 1))
 		{
-			$scope.movies[index].posterIndex++;
+			$scope.movies[index].posterindex++;
 		} else {
 			
-			$scope.movies[index].posterIndex = 0;
+			$scope.movies[index].posterindex = 0;
 		}
 		};
+		
+	/*
+
+	$scope.timeText(minutes)
+	{
+		
+		
+	}
+
+	*/
 		
 	
 	
