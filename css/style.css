@@ -140,7 +140,13 @@ body {
 
 /* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
 
-
+.poster {
+	
+	max-width: 500px;
+	max-height: 750px;
+	min-height: 750px;
+	
+}
 
 
 
