@@ -99,7 +99,7 @@ app.controller('HomeController', ['$scope', function($scope) {
 	/* ADD VARIABLES FOR STEP 3 HERE */
 	
 	$scope.title = "IMDB + Semaj's Top 8 Movies";
-	$scope.owner = "Semaj Andrews"
+	$scope.owner = "Semaj"
 	$scope.github = "https://github.com/officialmaj/is219s17andrews-p3";
 	
 	
@@ -130,15 +130,19 @@ app.controller('HomeController', ['$scope', function($scope) {
 		}
 		};
 		
-	/*
+	
 
-	$scope.timeText(minutes)
+	$scope.timeText = function (minutes)
 	{
+		var hours = Math.floor(minutes/60);
+		var min = minutes % 60;
+		var time = hours + "h " + min + "m";
 		
+		return time;
 		
-	}
+	};
 
-	*/
+	
 		
 	
 	
