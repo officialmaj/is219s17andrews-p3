@@ -88,8 +88,52 @@ app.controller('HomeController', ['$scope', function($scope) {
       likes:	812,
       dislikes:	101,
       posterindex: 0
-	}
+	},
 	
+    { 
+      title:	'Lucy', 
+      iscore:	6.4,
+      rating:	'R',
+      runtime:	119,
+      released:	new Date('2014', '07', '25'),
+      country:	'USA',
+      posters:	['img/lucy.jpg'],
+      imdb:		'http://www.imdb.com/title/tt2872732',
+      website:	'https://www.uphe.com/movies/lucy',
+      likes:	614,
+      dislikes:	345,
+      posterindex: 0
+	},
+	
+    { 
+      title:	'The Matrix', 
+      iscore:	8.7,
+      rating:	'R',
+      runtime:	216,
+      released:	new Date('1999', '03', '31'),
+      country:	'USA',
+      posters:	['img/thematrix.jpg'],
+      imdb:		'http://www.imdb.com/title/tt0133093',
+      website:	'https://www.warnerbros.com/matrix',
+      likes:	3222,
+      dislikes:	481,
+      posterindex: 0
+	},
+
+    { 
+      title:	'In Time', 
+      iscore:	6.7,
+      rating:	'R',
+      runtime:	149,
+      released:	new Date('2011', '10', '28'),
+      country:	'USA',
+      posters:	['img/intime.jpg'],
+      imdb:		'http://www.imdb.com/title/tt1637688',
+      website:	'https://www.facebook.com/InTimeMovie/',
+      likes:	315,
+      dislikes:	154,
+      posterindex: 0
+	}	
 	
   ];
 	
